@@ -1,14 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Cultura Local</title>
-  <!-- Importando Google Fonts -->
-  https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #f4f6f8;
       margin: 0;
       padding: 0;
@@ -22,7 +19,7 @@
     h1 {
       margin: 0;
       font-size: 2.5em;
-      font-weight: 600;
+      font-weight: bold;
     }
     header p {
       font-size: 1.2em;
@@ -52,10 +49,36 @@
       font-size: 16px;
       line-height: 1.5;
       border-left: 5px solid #2575fc;
+      display: flex;
+      flex-direction: column;
     }
     li strong {
       font-size: 18px;
       color: #2575fc;
+    }
+    .map-link {
+      margin-top: 8px;
+      text-decoration: none;
+      color: #6a11cb;
+      font-weight: bold;
+    }
+    .map-link:hover {
+      text-decoration: underline;
+    }
+    .btn-add {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #2575fc;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn-add:hover {
+      background: #6a11cb;
     }
     footer {
       text-align: center;
@@ -63,6 +86,18 @@
       font-size: 14px;
       color: #666;
       margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      main {
+        margin: 15px;
+        padding: 15px;
+      }
+      li {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -75,22 +110,30 @@
     <h2>Próximos eventos:</h2>
     <ul>
       <li>🌱 <strong>ExpoCannabis Brasil 2026 - 4ª Edição</strong><br>
-      20 a 22 de Novembro/2026 - São Paulo Expo, São Paulo - SP</li>
+      20 a 22 de Novembro/2026 - São Paulo Expo, São Paulo - SP
+      <a class="map-link" href="https://goo.gl/maps/8tY5u" target="_blank">Ver mapa</a></li>
 
       <li>🍔 <strong>iFood Move 2026</strong><br>
-      16 e 17 de Setembro/2026 - São Paulo Expo, São Paulo - SP</li>
+      16 e 17 de Setembro/2026 - São Paulo Expo, São Paulo - SP
+      <a class="map-link" href="https://goo.gl/maps/8tY5u" target="_blank">Ver mapa</a></li>
 
       <li>🏟️ <strong>Museu do Futebol</strong><br>
-      3 a 30 de Dezembro/2025 - Praça Charles Miller, S/N - Estádio do Pacaembu, São Paulo - SP</li>
+      3 a 30 de Dezembro/2025 - Praça Charles Miller, S/N - Estádio do Pacaembu, São Paulo - SP
+      <a class="map-link" href="https://goo.gl/maps/8tY5u" target="_blank">Ver mapa</a></li>
 
       <li>📚 <strong>Museu da Língua Portuguesa</strong><br>
-      3 a 30 de Dezembro/2025 - Praça da Luz, s/nº - Portão 1, São Paulo - SP</li>
+      3 a 30 de Dezembro/2025 - Praça da Luz, s/nº - Portão 1, São Paulo - SP
+      <a class="map-link" href="https://goo.gl/maps/8tY5u" target="_blank">Ver mapa</a></li>
 
       <li>🎶 <strong>Samba da Rosa - A última do ano</strong><br>
-      20 a 21 de Dezembro/2025 - Bosque do Esperia, São Paulo - SP</li>
+      20 a 21 de Dezembro/2025 - Bosque do Esperia, São Paulo - SP
+      <a class="map-link" href="https://goo.gl/maps/8tY5u" target="_blank">Ver mapa</a></li>
     </ul>
-   </main>
+
+    <a href="#" class="btn-add">Adicionar Evento</a>
+  </main>
   <footer>
     &copy; 2025 Cultura Local | Contato: cultura@email.com
   </footer>
 </body>
+</html>
